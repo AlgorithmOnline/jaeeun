@@ -1,0 +1,10 @@
+import collections
+N = int(input())
+a=[]
+for _ in range(N):
+    b,c = map(int, input().split())
+    a.append((b,c))
+
+a=sorted(a, key = lambda g:(g[0], g[1]))
+for k in a:
+    print(*k)

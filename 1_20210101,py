@@ -1,0 +1,7 @@
+import collections
+a =list(str(input()))
+a = collections.Counter(a)
+a= sorted(a.items(), key = lambda b:-ord(b[0]))
+for i in a:
+    for k in range(i[1]):
+        print(i[0], end="")
